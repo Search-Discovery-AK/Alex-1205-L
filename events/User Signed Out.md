@@ -1,0 +1,20 @@
+# User Signed Out
+
+## Javascript Code
+```js
+window.appEventData1205 = window.appEventData1205 || [];
+appEventData1205.push({
+  "event": "User Signed Out",
+    "user": {
+        "custKey": "<custKey>",
+        "profileAttributesList": "<profileAttributesList>"
+    }
+});
+```
+
+## Variable Definitions
+
+|Field|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|custKey|string|Unique identifier of a customer.  Any id's considered PII must be hashed. ||||||||
+|profileAttributesList|string|A twice delimited string of key / value pairs.  Use ~ between key and value.  Use | between pairs|homeStore~234|loyaltyTier~gold|memberSince~2002|||||||
